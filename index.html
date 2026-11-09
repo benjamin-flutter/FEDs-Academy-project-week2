@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Okereke Benjamin · Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<link rel="stylesheet" href="style.css">
+
   <!-- HEADER: name + photo with alt text -->
   <header>
     <h1>Okereke Benjamin .N</h1>
     <img 
       src="./benbenben.jpeg" 
-      alt="Portrait of Okereke Benjamin"
+      alt="Portrait of Okereke Benjamin smiling, wearing a dark shirt"
       width="130"
       height="130"
     >
@@ -38,7 +39,7 @@
     </p>
   </section>
 
-  <!-- SKILLS SECTION -->
+  <!-- SKILLS SECTION (includes a list AND a table) -->
   <section id="skills">
     <h2>Skills</h2>
     <ul>
@@ -48,6 +49,45 @@
       <li>Figma (basics)</li>
       <li>Git &amp; GitHub Basics</li>
     </ul>
+
+    <h3>Proficiency snapshot</h3>
+    <table>
+      <caption>Self-assessed skill levels</caption>
+      <thead>
+        <tr>
+          <th scope="col">Skill</th>
+          <th scope="col">Level</th>
+          <th scope="col">Tools / Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>Intermediate</td>
+          <td>Semantic markup, forms</td>
+        </tr>
+        <tr>
+          <td>Graphics design</td>
+          <td>Proficient</td>
+          <td>Photoshop, CorelDraw</td>
+        </tr>
+        <tr>
+          <td>Figma</td>
+          <td>Beginner</td>
+          <td>Wireframing, basic prototypes</td>
+        </tr>
+        <tr>
+          <td>Git &amp; GitHub</td>
+          <td>Beginner</td>
+          <td>Basic version control</td>
+        </tr>
+        <tr>
+          <td>Bass guitar</td>
+          <td>Advanced</td>
+          <td>Live performance, improvisation</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
   <!-- WHY I JOINED FEDs SECTION -->
@@ -66,7 +106,7 @@
     </p>
   </section>
 
-  <!-- CONTACT FORM -->
+  <!-- CONTACT FORM (four controls with labels) -->
   <section id="contact">
     <h2>Contact</h2>
     <form action="#" method="post">
@@ -81,6 +121,16 @@
       <div>
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+      </div>
+      <div>
+        <label for="reason">Reason for contact</label>
+        <select id="reason" name="reason" required>
+          <option value="">-- Please select --</option>
+          <option value="collab">Collaboration</option>
+          <option value="feedback">Feedback</option>
+          <option value="mentorship">Mentorship</option>
+          <option value="general">General inquiry</option>
+        </select>
       </div>
       <button type="submit">Send message</button>
     </form>
